@@ -27,5 +27,17 @@
     <ClCompile Include="11659_Partial_Sum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="12852_reduce_to_one_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="14501_quit_job.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2748_fibonacci_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2240_plumtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
