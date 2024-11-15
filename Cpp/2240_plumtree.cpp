@@ -10,7 +10,7 @@ int main() {
 	int t, w;
 	cin >> t >> w;
 
-	int dp[1001][32] = { 0 };
+	int dp[2][1001][32] = { 0 };
 
 	int arr[1001] = { 0 };
 
@@ -18,4 +18,10 @@ int main() {
 	{
 		cin >> arr[i];
 	}
+
+	for (int i = 1; i <= t; i++)
+	{
+
+	}
+}
 
