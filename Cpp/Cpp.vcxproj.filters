@@ -13,34 +13,61 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\-241115">
+      <UniqueIdentifier>{4b078b0c-f77d-48bb-a0e6-7c05ad8d3bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\241118-241124">
+      <UniqueIdentifier>{32bcedb4-c855-4da5-b996-00f2ff2e0d2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11055_LargestIncreasingSeries.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LongestIncreasingSeries.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PinaryNumber.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="11659_Partial_Sum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="12852_reduce_to_one_2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="14501_quit_job.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="2294_coin_2.cpp">
+      <Filter>Source Files\-241115</Filter>
     </ClCompile>
     <ClCompile Include="2748_fibonacci_2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2240_plumtree.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\-241115</Filter>
     </ClCompile>
     <ClCompile Include="9084_coins.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="9655_coins_1.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="9655_stone_game.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="9657_stone_game_3.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="11055_LargestIncreasingSeries.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="11659_Partial_Sum.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="12852_reduce_to_one_2.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="14501_quit_job.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="LongestIncreasingSeries.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="PinaryNumber.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="11660_partial_sum.cpp">
+      <Filter>Source Files\-241115</Filter>
+    </ClCompile>
+    <ClCompile Include="2302_theater_seats.cpp">
+      <Filter>Source Files\241118-241124</Filter>
+    </ClCompile>
+    <ClCompile Include="14002_longest_increasing_series.cpp">
+      <Filter>Source Files\241118-241124</Filter>
+    </ClCompile>
+    <ClCompile Include="2240_plumtree.cpp">
+      <Filter>Source Files\241118-241124</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
