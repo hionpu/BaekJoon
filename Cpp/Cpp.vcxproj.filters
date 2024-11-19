@@ -69,5 +69,8 @@
     <ClCompile Include="2240_plumtree.cpp">
       <Filter>Source Files\241118-241124</Filter>
     </ClCompile>
+    <ClCompile Include="2482_color_circle.cpp">
+      <Filter>Source Files\241118-241124</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
