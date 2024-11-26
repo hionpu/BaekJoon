@@ -19,6 +19,9 @@
     <Filter Include="Source Files\-241117">
       <UniqueIdentifier>{4b078b0c-f77d-48bb-a0e6-7c05ad8d3bb5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\241125-241201">
+      <UniqueIdentifier>{352f5a15-b849-4aab-8090-7fc48712e348}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -95,6 +98,15 @@
     </ClCompile>
     <ClCompile Include="1915_largest_square.cpp">
       <Filter>Source Files\241118-241124</Filter>
+    </ClCompile>
+    <ClCompile Include="10942_palindrome.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="1520_downhill.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="4883_triangle_graph.cpp">
+      <Filter>Source Files\241125-241201</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
