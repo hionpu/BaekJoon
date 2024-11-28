@@ -108,5 +108,32 @@
     <ClCompile Include="4883_triangle_graph.cpp">
       <Filter>Source Files\241125-241201</Filter>
     </ClCompile>
+    <ClCompile Include="2669_union_of_4_rectangles.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="2720_laundry_owner_donghyuk.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="2903_central_movement_algorithm.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="2292_honeycomb.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="2869_snail_wants_to_climb.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="5086_multiple_or_factor.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="2501_find_factor.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="9506_sum_of_factors.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="1978_find_prime.cpp">
+      <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
