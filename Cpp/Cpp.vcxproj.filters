@@ -22,6 +22,12 @@
     <Filter Include="Source Files\241125-241201">
       <UniqueIdentifier>{352f5a15-b849-4aab-8090-7fc48712e348}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\241202-241208">
+      <UniqueIdentifier>{4cb2726b-0ca2-43ff-ab4e-ec4ef690feb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\241209-241215">
+      <UniqueIdentifier>{20331a0a-653a-45d3-9b6f-dd2a6a2e4e69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -134,6 +140,39 @@
     </ClCompile>
     <ClCompile Include="1978_find_prime.cpp">
       <Filter>Source Files\241125-241201</Filter>
+    </ClCompile>
+    <ClCompile Include="temp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1157_learn_words.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="2941_croatia_alphabet.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="1316_group_word_checker.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="25206_avg_score.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="2738_matrix_max_element.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="10798_vertical_read.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="2798_blackjack.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="2231_decomposed_sum.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="19532_untact_math_class.cpp">
+      <Filter>Source Files\241202-241208</Filter>
+    </ClCompile>
+    <ClCompile Include="1018_recolor_chess.cpp">
+      <Filter>Source Files\241209-241215</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
