@@ -174,5 +174,29 @@
     <ClCompile Include="1018_recolor_chess.cpp">
       <Filter>Source Files\241209-241215</Filter>
     </ClCompile>
+    <ClCompile Include="1436_movie_director_shom.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="2839_sugar_delivery.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="10815_number_cards.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="14425_string_set.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="7785_In_attendence.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="1620_pokemon_master.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="10816_num_cards_2.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
+    <ClCompile Include="1764_never_seen_never_heard.cpp">
+      <Filter>Source Files\241209-241215</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
