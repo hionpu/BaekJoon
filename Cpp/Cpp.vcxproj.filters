@@ -37,6 +37,12 @@
     <Filter Include="Source Files\2412\241216-241222">
       <UniqueIdentifier>{0ec8f1ee-d8e5-4e15-8e4c-ca358c09e1b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2412\241223-241229">
+      <UniqueIdentifier>{77bdb3fa-c2db-4a3f-8f4d-689d538d2e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2412\241230-250105">
+      <UniqueIdentifier>{48b45425-7dcf-4326-a898-446683445227}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -230,6 +236,126 @@
     </ClCompile>
     <ClCompile Include="1929_primes_between.cpp">
       <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="4948_Bertrand%27s_postulate.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="17103_Goldbach%27s_conjecture.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="13909_close_window.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="28278_stack_2.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="10773_zero.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="9012_parenthesis.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="4949_balanced_world.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="12789_dokidoki_snack_dispenser.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="18258_queue_2.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="2164_cards_2.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="11866_Josephus_problem_0.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="2346_pop_balloons.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="28279_deque.cpp">
+      <Filter>Source Files\2412\241216-241222</Filter>
+    </ClCompile>
+    <ClCompile Include="24511_queuestack.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="1037_factors.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="25192_gomgom-ticon.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="20920_word_memorize.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="15649_N_M_1.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="15650_N_M_2.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="15651_N_M_3.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="15652_N_M_4.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="9663_N-queen.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="2580_sudoku.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="14888_insert_operators.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="14889_start_and_link.cpp">
+      <Filter>Source Files\2412\241223-241229</Filter>
+    </ClCompile>
+    <ClCompile Include="9184_recursion_to_dynamic.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="2565_electric_wire.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="12865_plain_backpack.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="2559_sequence.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="16139_human_computer_interaction.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="10986_residue_sum.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="25682_recolor_chess_2.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="11047_coins_0.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="1931_saminar_room_assignment.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="13305_gas_station.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="2630_origami_paper.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="1629_multiplication.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="1629_multiplication_overflow.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="11401_binomial_coeff.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="10830_matrix_n_squared.cpp">
+      <Filter>Source Files\2412\241230-250105</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

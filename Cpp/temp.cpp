@@ -1,5 +1,5 @@
 #include <iostream>   
-
+#include <cmath>
 using namespace std;
 
 
@@ -8,10 +8,13 @@ int main() {
     cin.tie(0);
     cout.tie(0);
 
-    int a1, a0, c, n0;
-    cin >> a1 >> a0 >> c >> n0;
-
-    if (a1 * n0 + a0 <= c * n0 && a1 <= c) cout << 1;
-    else cout << 0;
+    int N, K, numer = 1, deno = 1; cin >> N >> K;
+    
+    while (K--)
+    {
+        numer *= N-- ;
+        deno *= K + 1;
+    }
+    cout << numer/deno;
     return 0;
 }
