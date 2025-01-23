@@ -43,6 +43,18 @@
     <Filter Include="Source Files\2412\241230-250105">
       <UniqueIdentifier>{48b45425-7dcf-4326-a898-446683445227}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2501">
+      <UniqueIdentifier>{11b25ff9-54a4-47ff-a397-b1efb049b02c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2501\06-12">
+      <UniqueIdentifier>{24df4f1f-0780-4f6f-bead-126c1e725bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2501\13-19">
+      <UniqueIdentifier>{a38ce58c-f8c8-4954-bcbc-7ac7508c37e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2501\20-26">
+      <UniqueIdentifier>{c5045439-0c90-49c4-bf16-e39f104aad3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -356,6 +368,75 @@
     </ClCompile>
     <ClCompile Include="10830_matrix_n_squared.cpp">
       <Filter>Source Files\2412\241230-250105</Filter>
+    </ClCompile>
+    <ClCompile Include="11444_Fibonacci_6.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="6549_historgram.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="1920_find_number.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="1654_cut_LAN_cable.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="2805_cut_tree.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="2110_install_routers.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="1300_K-th_number.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="12015_longest_increasing_subsequence.cpp">
+      <Filter>Source Files\2501\06-12</Filter>
+    </ClCompile>
+    <ClCompile Include="11279_max_heap.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="1927_min_heap.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="11286_abs_min_heap.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="11066_merge_files.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="11049_matrix_multiplication_order.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="2629_balance_scale.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="7579_apps.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="9935_explosive_string.cpp">
+      <Filter>Source Files\2501\13-19</Filter>
+    </ClCompile>
+    <ClCompile Include="17298_NGE.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="17299_NGF.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="1725_histogram.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="3015_oasis_reunion.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="24479_algorithm_class_dfs.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="24444_algorithm_class_bfs.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_virus.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
