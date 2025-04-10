@@ -623,7 +623,11 @@
     <ClCompile Include="ref_2618.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Smsng_2024_2nd_half_AM_1.cpp" />
+    <ClCompile Include="Smsng_2024_2nd_half_AM_1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_2nd_half_AM_1_ver2.cpp" />
+    <ClCompile Include="Smsng_2024_2nd_half_PM_1.cpp" />
     <ClCompile Include="temp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

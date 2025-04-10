@@ -597,5 +597,11 @@
     <ClCompile Include="Smsng_2024_2nd_half_AM_1.cpp">
       <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
+    <ClCompile Include="Smsng_2024_2nd_half_AM_1_ver2.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_2nd_half_PM_1.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
