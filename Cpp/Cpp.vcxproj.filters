@@ -55,6 +55,42 @@
     <Filter Include="Source Files\2501\20-26">
       <UniqueIdentifier>{c5045439-0c90-49c4-bf16-e39f104aad3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2501\27-02">
+      <UniqueIdentifier>{aa13c6df-6dc2-4127-9eb7-6f65ab7d33f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2502">
+      <UniqueIdentifier>{cc3bd131-4b36-4450-ab65-83fcb99042b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2502\03-09">
+      <UniqueIdentifier>{a582498e-ba7e-45af-b76f-9a8edfc7e1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2502\10-16">
+      <UniqueIdentifier>{3516743e-743f-46b8-9108-9fe8465fb638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2502\17-23">
+      <UniqueIdentifier>{711e3f0d-545e-4b8e-a3b7-f8d262c9abda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2503">
+      <UniqueIdentifier>{b5cd21b1-fe7f-4877-8118-c668a9bcd16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2502\24-02">
+      <UniqueIdentifier>{f6a03fe6-a198-4485-8898-418924aff65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2503\03-09">
+      <UniqueIdentifier>{6720445c-26db-44f4-a1a2-4a8a7fad1845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2503\10-16">
+      <UniqueIdentifier>{dd77a124-74b2-421e-99a9-471ca1fc96f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2503\17-23">
+      <UniqueIdentifier>{fd3be9a2-c48b-4639-a568-f699d1b0b472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2504">
+      <UniqueIdentifier>{4b531c42-50ba-42c1-b7bd-0cceacf5e632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2504\07-13">
+      <UniqueIdentifier>{2fb2414a-eb7a-4925-8fb6-7d1d45777270}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -437,6 +473,129 @@
     </ClCompile>
     <ClCompile Include="2606_virus.cpp">
       <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_dfs_and_bfs.cpp">
+      <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="2667_numbering_villages.cpp">
+      <Filter>Source Files\2501\27-02</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_organic_cabbage.cpp">
+      <Filter>Source Files\2501\27-02</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_maze_escape.cpp">
+      <Filter>Source Files\2501\27-02</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_hide_and_seek.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="7562_move_knight.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_tomato.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="7569_3D_tomato.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="16928_snake_and_ladder.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="2206_break_wall_maze.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="1753_shortest_path.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="1707_bipartite_graph.cpp">
+      <Filter>Source Files\2502\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="1504_special_shortest_path.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="13549_hide_and_seek_3.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="9370_unknown_destination.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="11657_time_machine.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="11404_floyd.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="1956_exercise.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="3273_sum_of_two.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="2470_two_solutions.cpp">
+      <Filter>Source Files\2502\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="1806_partial_sum_two_pointers.cpp">
+      <Filter>Source Files\2502\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="1644_sequencial_sum_of_primes.cpp">
+      <Filter>Source Files\2502\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="1450_napsack_two_pointer.cpp">
+      <Filter>Source Files\2502\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="14003_LIS_5.cpp">
+      <Filter>Source Files\2502\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="9252_LCS_2.cpp">
+      <Filter>Source Files\2502\24-02</Filter>
+    </ClCompile>
+    <ClCompile Include="2618_police_duty.cpp">
+      <Filter>Source Files\2502\24-02</Filter>
+    </ClCompile>
+    <ClCompile Include="ref_2618.cpp">
+      <Filter>Source Files\2502\24-02</Filter>
+    </ClCompile>
+    <ClCompile Include="13913_hide_and_seek_4.cpp">
+      <Filter>Source Files\2503\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="9019_DSLR.cpp">
+      <Filter>Source Files\2503\03-09</Filter>
+    </ClCompile>
+    <ClCompile Include="11779_min_cost_2.cpp">
+      <Filter>Source Files\2503\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="11780_floyd_2.cpp">
+      <Filter>Source Files\2503\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="11725_tree_find_parent.cpp">
+      <Filter>Source Files\2503\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="1167_tree_diameter.cpp">
+      <Filter>Source Files\2503\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="23_tree_diameter_2.cpp">
+      <Filter>Source Files\2503\10-16</Filter>
+    </ClCompile>
+    <ClCompile Include="1991_binary_tree_traversal.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="2263_tree_traversal.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="2263_tree_treaversal_vector.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="5639_binary_search_tree.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="4803_how_many_trees.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="1717_set_expression.cpp">
+      <Filter>Source Files\2503\17-23</Filter>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_2nd_half_AM_1.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
