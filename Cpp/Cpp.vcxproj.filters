@@ -55,6 +55,12 @@
     <Filter Include="Source Files\2501\20-26">
       <UniqueIdentifier>{c5045439-0c90-49c4-bf16-e39f104aad3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2504">
+      <UniqueIdentifier>{a796507e-a067-4762-ad3a-236fa942e679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2504\07-13">
+      <UniqueIdentifier>{022d3bc7-9de1-4f1a-8006-9f2a378dc720}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -437,6 +443,9 @@
     </ClCompile>
     <ClCompile Include="2606_virus.cpp">
       <Filter>Source Files\2501\20-26</Filter>
+    </ClCompile>
+    <ClCompile Include="24_AM_2.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
