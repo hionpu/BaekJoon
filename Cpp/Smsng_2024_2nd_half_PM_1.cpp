@@ -1,22 +1,23 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 struct medu {
     int y;
     int x;
     int d;
-}
+};
 
 struct war {
     int y;
     int x;
     bool alive;
-}
+};
 
 int main() {
-    int n, m; cin >> n, m;
+    int n, m; cin >> n >> m;
 
-    vector<n, vector<int>(n)> town;
+    vector<vector<int>> town;
 
     int sr, sc, er, ec; cin >> sr >> sc >> er >> ec;
 

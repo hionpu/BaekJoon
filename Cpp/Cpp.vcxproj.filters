@@ -91,6 +91,9 @@
     <Filter Include="Source Files\2504\07-13">
       <UniqueIdentifier>{2fb2414a-eb7a-4925-8fb6-7d1d45777270}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2504\14-20">
+      <UniqueIdentifier>{076bc4f6-f51b-4ba7-9869-864ce9760ed7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -602,6 +605,15 @@
     </ClCompile>
     <ClCompile Include="Smsng_2024_2nd_half_PM_1.cpp">
       <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_2nd_PM_2.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_1st_AM_1.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="Smsng_2024_1st_AM_2.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
