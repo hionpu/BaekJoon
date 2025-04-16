@@ -594,9 +594,6 @@
     <ClCompile Include="4803_how_many_trees.cpp">
       <Filter>Source Files\2503\17-23</Filter>
     </ClCompile>
-    <ClCompile Include="1717_set_expression.cpp">
-      <Filter>Source Files\2503\17-23</Filter>
-    </ClCompile>
     <ClCompile Include="Smsng_2024_2nd_half_AM_1.cpp">
       <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
@@ -613,7 +610,21 @@
       <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
     <ClCompile Include="Smsng_2024_1st_AM_2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\2504\07-13</Filter>
     </ClCompile>
+    <ClCompile Include="24_AM_2.cpp">
+      <Filter>Source Files\2504\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="1717_set_expression.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="1976_go_trip.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdc++.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
