@@ -6,6 +6,46 @@
 #include <set>
 
 using namespace std;
+class DisjointSet {
+private:
+    vector<int> parent;
+    vector<int> rank;
+
+public: 
+    DisjointSet(int n) {
+        parent.resize(n+1);
+        rank.resize(n+1, 0);
+
+        for (int i = 0; i <= n; ++i)
+        {
+            parent[i] = i;
+        }
+    }
+
+    int find(int x) {
+        if (parent[x] == x) return x;
+        return parent[x] = find(parent[x]);
+    }
+
+    void unite(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+
+        if (rootX == rootY) return;
+
+        if (rank[rootX] < rank[rootY]) parent[rootX] = rootY;
+        else if (rank[rootX] > rank[rootY]) parent[rootY] = rootX;
+        else
+        {
+            parent[rootY] = rootX;
+            rank[rootX]++;
+        }
+    }
+
+    bool same(int x, int y) {
+        return find(x) == find(y);
+    }
+};
 
 
 int main() {
@@ -14,45 +54,21 @@ int main() {
     cout.tie(0);
 
     int n, m; cin >> n >> m;
-    map<int, int> setInfo;
-    vector<set<int>> sets;
-    for (int i = 0; i <= n; ++i)
-    {
-        sets.push_back({i});
-    }
-    for (int i = 0; i < m; ++i)
-    {
-        int op, a, b; cin >> op >> a >> b;
-        if (op == 0)
-        {
-            for (auto& s : sets)
-            {
-                if (s.contains(b))
-                {
-                    s.erase(b);
-                    break;
-                }
-            }
+    
+    DisjointSet ds(n);
 
-            for (auto& s : sets)
-            {
-                if (s.contains(a))
-                {
-                    s.insert(b);
-                    break;
-                }
-            }
-        }
+    while (m--)
+    {
+        int op, a, b;
+        cin >> op >> a >> b;
+
+        if (op == 0) ds.unite(a, b);
         else if (op == 1)
         {
-            string ans = "NO";
-            for (auto& s : sets)
-            {
-                if (s.contains(a) && s.contains(b)) ans = "YES";
-            }
-            cout << ans << '\n';
+            if (ds.same(a, b)) cout << "YES" << '\n';
+            else cout << "NO" << '\n';
         }
-
     }
+    
     return 0;
 }
