@@ -621,6 +621,21 @@
     <ClCompile Include="1976_go_trip.cpp">
       <Filter>Source Files\2504\14-20</Filter>
     </ClCompile>
+    <ClCompile Include="4195_friend_network.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="20040_cycle_game.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="9372_Sang-geun_trip.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="1197_minimum_spanning_tree.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="4386_make_constellation.cpp">
+      <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdc++.h">
