@@ -678,6 +678,9 @@
     <ClCompile Include="2213_independent_set_of_tree.cpp">
       <Filter>Source Files\2504\28-04</Filter>
     </ClCompile>
+    <ClCompile Include="2533_SNS.cpp">
+      <Filter>Source Files\2504\28-04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdc++.h">
