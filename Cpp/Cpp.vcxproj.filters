@@ -94,6 +94,12 @@
     <Filter Include="Source Files\2504\14-20">
       <UniqueIdentifier>{076bc4f6-f51b-4ba7-9869-864ce9760ed7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2504\21-27">
+      <UniqueIdentifier>{6fce1bc0-1022-49a1-8b77-d0aa5ce3bda1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2504\28-04">
+      <UniqueIdentifier>{5d70a001-cb8b-45a0-9750-1f1644c3c554}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -635,6 +641,42 @@
     </ClCompile>
     <ClCompile Include="4386_make_constellation.cpp">
       <Filter>Source Files\2504\14-20</Filter>
+    </ClCompile>
+    <ClCompile Include="1774_communication_with_god.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="6497_power_shortage.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="17472_build_bridge.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="20944_anti-palindrom.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="30618_donstructive.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="28065_SW_series.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="25184_dong-ga_series.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="25288_english_test.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="31836_Fiobonacci_souvenir.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="15311_sell_medicine.cpp">
+      <Filter>Source Files\2504\21-27</Filter>
+    </ClCompile>
+    <ClCompile Include="15681_tree_and_query.cpp">
+      <Filter>Source Files\2504\28-04</Filter>
+    </ClCompile>
+    <ClCompile Include="2213_independent_set_of_tree.cpp">
+      <Filter>Source Files\2504\28-04</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
