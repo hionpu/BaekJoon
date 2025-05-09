@@ -100,6 +100,12 @@
     <Filter Include="Source Files\2504\28-04">
       <UniqueIdentifier>{5d70a001-cb8b-45a0-9750-1f1644c3c554}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2505">
+      <UniqueIdentifier>{843632b0-3ff4-46bb-bf6a-7c3cac70b94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2505\05-11">
+      <UniqueIdentifier>{abed3103-98b2-43b4-83d1-0f2e73239190}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -680,6 +686,30 @@
     </ClCompile>
     <ClCompile Include="2533_SNS.cpp">
       <Filter>Source Files\2504\28-04</Filter>
+    </ClCompile>
+    <ClCompile Include="1949_good_town.cpp">
+      <Filter>Source Files\2504\28-04</Filter>
+    </ClCompile>
+    <ClCompile Include="2166_polygon_area.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="11758_CCW.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="25308_radial_graph.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="17386_line_segment_cross.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="20149_line_segment_cross_3.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="2162_segment_group.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="1688_inside_polygon.cpp">
+      <Filter>Source Files\2505\05-11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
