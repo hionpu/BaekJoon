@@ -106,6 +106,9 @@
     <Filter Include="Source Files\2505\05-11">
       <UniqueIdentifier>{abed3103-98b2-43b4-83d1-0f2e73239190}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2505\12-18">
+      <UniqueIdentifier>{813c3f42-4119-4207-b34b-9deff7927281}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -710,6 +713,33 @@
     </ClCompile>
     <ClCompile Include="1688_inside_polygon.cpp">
       <Filter>Source Files\2505\05-11</Filter>
+    </ClCompile>
+    <ClCompile Include="11723_set.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="1311_assign_task_1.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="gcc_msvc_uniform_func.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2098_TSP.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="1086_Park_Sungwon.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="17404_RGB_street.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="2637_toy_assembly.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="25953_temporal_graph.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="1786_find_word.cpp">
+      <Filter>Source Files\2505\12-18</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

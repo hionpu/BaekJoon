@@ -6,6 +6,8 @@
 using namespace std;
 
 typedef pair<int, int> pii;
+typedef long long ll;
+int maxX;
 
 struct point {
 	int x;
@@ -18,8 +20,8 @@ struct segment {
 };
 
 bool isOnEdge(segment& edge, point p) {
-	double a = (p.y - edge.p1.y) * (edge.p2.x - p.x);
-	double c = (edge.p2.y - p.y) * (p.x - edge.p1.x);
+	ll a = (p.y - edge.p1.y) * (edge.p2.x - p.x);
+	ll c = (edge.p2.y - p.y) * (p.x - edge.p1.x);
 	if (a == c)
 	{
 		if (min(edge.p1.x, edge.p2.x) <= p.x &&
@@ -32,7 +34,7 @@ bool isOnEdge(segment& edge, point p) {
 }
 
 int ccw(point a, point b, point c) {
-	int cross = (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+	ll cross = (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
 	return cross == 0 ? 0 : (cross > 0 ? 1 : -1);
 }
 
@@ -70,10 +72,13 @@ bool checkInside(vector<segment>& polygon, point p) {
 			return true;
 		}
 
-		if (checkIntersect(edge, ray));
+		if (checkIntersect(edge, ray))
+		{
+			intersectCount++;
+		}
 	}
+	return intersectCount % 2 == 1;
 }
-int maxX;
 
 int main() {
 	ios::sync_with_stdio(false);
@@ -81,7 +86,10 @@ int main() {
 	cout.tie(0);
 
 	int N; cin >> N;
+	int x0, y0;
 	int x1, y1; cin >> x1 >> y1;
+	x0 = x1;
+	y0 = y1;
 	maxX = x1;
 	vector<segment> polygon;
 
@@ -93,6 +101,8 @@ int main() {
 		x1 = x2;
 		y1 = y2;
 	}
+
+	polygon.push_back({ { x1,y1 }, { x0,y0 } });
 	point A, B, C;
 	cin >> A.x >> A.y >> B.x >> B.y >> C.x >> C.y;
 
