@@ -109,6 +109,9 @@
     <Filter Include="Source Files\2505\12-18">
       <UniqueIdentifier>{813c3f42-4119-4207-b34b-9deff7927281}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2505\19-25">
+      <UniqueIdentifier>{b591f1a1-5983-4ddc-a13d-b776f1c9b87c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -740,6 +743,24 @@
     </ClCompile>
     <ClCompile Include="1786_find_word.cpp">
       <Filter>Source Files\2505\12-18</Filter>
+    </ClCompile>
+    <ClCompile Include="40_LCA.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="17435_composite_func_query.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="11438_LCA_2.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoEver_25_1half_1.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="3176_road_network.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="13511_tree_and_query_2.cpp">
+      <Filter>Source Files\2505\19-25</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
