@@ -3,10 +3,41 @@
 #include <climits>
 #include <algorithm>
 #include <functional>
+#include <cmath>
 
 using namespace std;
 using ll = long long;
 using pii = pair<int, int>;
+
+int getAncester(int node, int k, int LOG_MAX, const vector<vector<int>>& parentTable) {
+	for (int i = 0; i < LOG_MAX; ++i)
+	{
+		if ((k >> i) & 1)
+		{
+			node = parentTable[i][node];
+			if (node == 0) break;
+		}
+	}
+	return node;
+}
+
+ll getPathSumToAncestor(int node, int ancestorDepth, int LOG_MAX, const vector<int>& depthTable, 
+	const vector<vector<int>>& parentTable, const vector<vector<ll>>& distTable) {
+	ll currentSum = 0;
+	int currentNode = node;
+	int stepsToJump = depthTable[currentNode] - ancestorDepth;
+
+	for (int i = LOG_MAX - 1; i >= 0; --i)
+	{
+		if ((stepsToJump >> i) & 1)
+		{
+			currentSum += distTable[i][currentNode];
+			currentNode = parentTable[i][currentNode];
+		}
+	}
+
+	return currentSum;
+}
 
 int main() {
 	ios::sync_with_stdio(false);
@@ -15,12 +46,13 @@ int main() {
 
 	int N; cin >> N;
 	int LOG_MAX = log2(N) + 1;
+	if (N > 0) LOG_MAX = floor(log2(N)) + 1;
+	else LOG_MAX = 1; // Handle N=0 or N=1 case for log2
+
 	vector<vector<pii>> adj(N + 1);
 	vector<int> depth(N + 1);
-	vector<vector<int>> parent(LOG_MAX, vector<int>(N + 1));
-	vector<vector<ll>> dist((ll)LOG_MAX, vector<ll>(N + 1));
-	vector<vector<int>> LCA(N + 1, vector<int>(N + 1));
-	vector<vector<vector<int>>> path(N + 1, vector<vector<int>>(N + 1));
+	vector<vector<int>> parent(LOG_MAX, vector<int>(N + 1, 0)); // Initialize with 0
+	vector<vector<ll>> dist(LOG_MAX, vector<ll>(N + 1, 0LL)); // Initialize with 0
 
 	for (int i = 0; i < N - 1; ++i)
 	{
@@ -50,6 +82,8 @@ int main() {
 	{
 		for (int n = 1; n <= N; ++n)
 		{
+			if (parent[i - 1][n] == 0) continue;
+
 			parent[i][n] = parent[i - 1][parent[i - 1][n]];
 			dist[i][n] = dist[i - 1][n] + dist[i - 1][parent[i - 1][n]];
 		}
@@ -72,9 +106,9 @@ int main() {
 
 			if (u == v) return u;
 
-			for (int i = 0; i < LOG_MAX; ++i)
+			for (int i = LOG_MAX-1; i >=0; --i)
 			{
-				if (parent[i][u] != parent[i][v])
+				if (parent[i][u] != 0 && parent[i][u] != parent[i][v])
 				{
 					u = parent[i][u];
 					v = parent[i][v];
@@ -84,52 +118,7 @@ int main() {
 			return parent[0][u];
 		};
 
-	for (int u = 1; u <= N; ++u)
-	{
-		for (int v = u; v <= N; ++v)
-		{
-			if (u == v) LCA[u][v] = u;
-			else
-			{
-				LCA[u][v] = findLCA(u, v);
-				LCA[v][u] = LCA[u][v];
-			}
-		}
-	}
 
-	for (int u = 1; u <= N; ++u)
-	{
-		for (int v = 1; v <= N; ++v)
-		{
-			if (u == v) continue;
-
-			int length = depth[u] + depth[v] - 2 * depth[LCA[u][v]];
-			path[u][v] = vector<int>(length+1);
-			path[u][v][0] = u;
-			path[u][v][length] = v;
-			int lca = LCA[u][v];
-			for (int k = 1; k <= depth[u] - lca; ++k)
-			{
-				int node = u;
-				for (int i = 0; i < LOG_MAX; ++i)
-				{
-					if (k & (1 << i)) node = parent[i][node];
-				}
-				path[u][v][k] = node;
-			}
-			for (int k = depth[u] - lca + 1; k < length && k > 0; ++k)
-			{
-				int node = v;
-				int uToLCA = depth[u] - depth[lca];
-				int height = depth[v] - (k-uToLCA + depth[lca]);
-				for (int i = 0; i < LOG_MAX; ++i)
-				{
-					if (height & (1 << i)) node = parent[i][node];
-				}
-				path[u][v][k] = node;
-			}
-		}
-	}
 
 	int M; cin >> M;
 
@@ -142,12 +131,29 @@ int main() {
 		if (command == 1)
 		{
 			cin >> u >> v;
-			cout << dist[u][v] << '\n';
+			int lca = findLCA(u, v);
+			ll distUtoLCA = getPathSumToAncestor(u, depth[lca], LOG_MAX, depth, parent, dist);
+			ll distVtoLCA = getPathSumToAncestor(v, depth[lca], LOG_MAX, depth, parent, dist);
+
+			cout << distUtoLCA + distVtoLCA << '\n';
 		}
 		else if (command == 2)
 		{
 			int k; cin >> u >> v >> k;
-			cout << path[u][v][k] << '\n';
+			int lca = findLCA(u, v);
+
+			int path_u_to_lca_len = depth[u] - depth[lca];
+			if (k - 1 < path_u_to_lca_len)
+			{
+				cout << getAncester(u, k - 1, LOG_MAX, parent) << '\n';
+			}
+			else
+			{
+				int steps_from_lca_to_target = (k - 1) - path_u_to_lca_len;
+				int path_lca_to_v_len = depth[v] - depth[lca];
+				int steps_up_from_v = path_lca_to_v_len - steps_from_lca_to_target;
+				cout << getAncester(v, steps_up_from_v, LOG_MAX, parent) << '\n';
+			}
 		}
 	}
 

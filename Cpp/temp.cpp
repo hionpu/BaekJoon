@@ -1,292 +1,169 @@
 #include <iostream>
+
 #include <vector>
+
+#include <algorithm>
 
 using namespace std;
 
-typedef pair<int, int> pii;
-
-int n, m, k, c;
-int board[20][20];
-int bomb[20][20];
 
 
-int dy[4] = { 0,1,0,-1 };
-int dx[4] = { 1,0,-1,0 };
+#define MAX_N 75001
 
-int bombY[4] = { -1, -1, 1, 1 };
-int bombX[4] = { 1, -1, -1, 1 };
+int tree[MAX_N * 4];
 
-void reduceBomb() {
-	for (int y = 0; y < n; ++y)
+vector<pair<int, int> > vec;
+
+vector<int> y_vec;
+
+
+
+void init_tree(int now, int start, int end) {
+
+	if (start > end) return;
+
+	if (start == end)
 	{
-		for (int x = 0; x < n; ++x)
-		{
-			if (bomb[y][x] > 0)
-			{
-				bomb[y][x]--;
-			}
-		}
-	}
-}
 
-void growth() {
-	// Calculate growth first with a temp array
-	vector<vector<int>> growth(n, vector<int>(n, 0));
+		tree[now] = 0;
 
-	for (int y = 0; y < n; y++)
-	{
-		for (int x = 0; x < n; ++x)
-		{
-			if (board[y][x] > 0)
-			{
-				for (int k = 0; k < 4; ++k)
-				{
-					int ny = y + dy[k];
-					int nx = x + dx[k];
+		return;
 
-					if (ny >= 0 && nx >= 0 && ny < n && nx < n)
-					{
-						if (board[ny][nx] > 0) growth[y][x]++;
-					}
-				}
-			}
-		}
 	}
 
-	// Apply growth after calculating all
-	for (int y = 0; y < n; y++)
-	{
-		for (int x = 0; x < n; ++x)
-		{
-			if (board[y][x] > 0)
-			{
-				board[y][x] += growth[y][x];
-			}
-		}
-	}
-}
+	tree[now] = 0;
 
-void reproduce(vector<pii>& temp) {
+	int mid = (start + end) / 2;
 
-	vector<vector<int>> tempBoard(n, vector<int>(n, 0));
+	init_tree(now * 2, start, mid);
 
-	for (int i = 0; i < n; ++i)
-	{
-		for (int j = 0; j < n; ++j)
-		{
-			tempBoard[i][j] = board[i][j];
-		}
-	}
-
-	for (int y = 0; y < n; y++)
-	{
-		for (int x = 0; x < n; ++x)
-		{
-			if (board[y][x] > 0)
-			{
-				temp.clear();
-				int newTree = 0;
-				for (int k = 0; k < 4; ++k)
-				{
-					int ny = y + dy[k];
-					int nx = x + dx[k];
-
-					// count how many empty adj's
-					// boundary condition
-					if (ny >= 0 && nx >= 0 && ny < n && nx < n &&
-						// empty?
-						board[ny][nx] == 0 &&
-						// bomb condition
-						bomb[ny][nx] == 0)
-					{
-						temp.push_back({ ny, nx });
-						newTree++;
-					}
-				}
-				if (newTree == 0) continue;
-
-				int newTreeSize = board[y][x] / newTree;
-				for (int i = 0; i < temp.size(); ++i)
-				{
-					tempBoard[temp[i].first][temp[i].second] += newTreeSize;
-				}
-			}
-		}
-	}
-	for (int i = 0; i < n; ++i)
-	{
-		for (int j = 0; j < n; ++j)
-		{
-			board[i][j] = tempBoard[i][j];
-		}
-	}
-
+	init_tree(now * 2 + 1, mid + 1, end);
 
 }
 
-void getBestPosition(vector<int>& container) {
-	container.clear();
 
-	int maxX = -1;
-	int maxY = -1;
-	int maxScore = 0;
-	for (int y = 0; y < n; ++y)
+
+void update_tree(int now, int target, int start, int end) {
+
+	if (target > end || target < start) return;
+
+	if (start == end)
 	{
-		for (int x = 0; x < n; ++x)
-		{
-			if (board[y][x] > 0)
-			{
-				// score from center of bomb
-				int currentScore = board[y][x];
-				// diagonal direction
-				for (int j = 0; j < 4; ++j)
-				{
-					// bomb length
-					for (int i = 1; i <= k; ++i)
-					{
-						int ny = y + i * bombY[j];
-						int nx = x + i * bombX[j];
-						//wall condition
-						if (ny < 0 || ny > n - 1 || nx < 0 || nx > n - 1 ||
-							bomb[ny][nx] == -1) break;
-						if (board[ny][nx] > 0)
-						{
-							currentScore += board[ny][nx];
-						}
-						else break;
-					}
-				}
-				if (currentScore > maxScore)
-				{
-					maxY = y;
-					maxX = x;
-					maxScore = currentScore;
-				}
-			}
-		}
+
+		tree[now]++;
+
+		return;
+
 	}
-	container.push_back(maxY);
-	container.push_back(maxX);
-	container.push_back(maxScore);
+
+	int mid = (start + end) / 2;
+
+	update_tree(now * 2, target, start, mid);
+
+	update_tree(now * 2 + 1, target, mid + 1, end);
+
+	tree[now] = tree[now * 2] + tree[now * 2 + 1];
+
 }
 
-void dropBomb(int y, int x) {
-	board[y][x] = 0;
-	bomb[y][x] = c;
-	// diagonal direction
-	for (int j = 0; j < 4; ++j)
+
+
+int query(int now, int left, int right, int start, int end) {
+
+	if (left > end || right < start) return 0;
+
+	if (left <= start && end <= right)
 	{
-		// bomb length
-		for (int i = 1; i <= k; ++i)
-		{
-			int ny = y + i * bombY[j];
-			int nx = x + i * bombX[j];
-			//wall condition
-			if (ny < 0 || ny > n - 1 || nx < 0 || nx > n - 1 ||
-				bomb[ny][nx] == -1) break;
-			// Apply herbicide
-			if (board[ny][nx] > 0)
-			{
-				board[ny][nx] = 0;
-				bomb[ny][nx] = c;
-			}
-			else
-			{
-				bomb[ny][nx] = c;
-				break; // Stop at empty cell
-			}
-		}
+
+		return tree[now];
+
 	}
+
+	int mid = (start + end) / 2;
+
+	return (
+
+		query(now * 2, left, right, start, mid) +
+
+		query(now * 2 + 1, left, right, mid + 1, end)
+
+		);
+
 }
+
+
+
+bool cmp_x_y(pair<int, int> a, pair<int, int> b) {
+
+	if (a.first == b.first) return a.second > b.second;
+
+	return a.first < b.first;
+
+}
+
+
+
+bool cmp_y(int a, int b) {
+
+	return a > b;
+
+}
+
+
 
 int main() {
 
-	int score = 0;
-	cin >> n >> m >> k >> c;
+	ios::sync_with_stdio(false);
 
-	for (int i = 0; i < n; i++)
+	cin.tie(0);
+
+	cout.tie(0);
+
+	int T; cin >> T;
+
+	while (T--)
 	{
-		for (int j = 0; j < n; ++j)
+
+		int N; cin >> N;
+
+		vec.clear();
+
+		y_vec.clear();
+
+		init_tree(1, 0, N - 1);
+
+		for (int i = 0; i < N; i++)
 		{
-			cin >> board[i][j];
-			if (board[i][j] == -1) bomb[i][j] = -1;
+
+			int x, y; cin >> x >> y;
+
+			vec.push_back({ x,y });
+
+			y_vec.push_back(y);
+
 		}
+
+		long long  ret = 0;
+
+		sort(vec.begin(), vec.end(), cmp_x_y);
+
+		sort(y_vec.begin(), y_vec.end(), cmp_y);
+
+		for (int i = 0; i < vec.size(); i++)
+		{
+
+			int x = vec[i].first, y = vec[i].second;
+
+			int index = upper_bound(y_vec.begin(), y_vec.end(), y, cmp_y) - y_vec.begin() - 1;
+
+			ret += query(1, 0, index, 0, N - 1);
+
+			update_tree(1, index, 0, N - 1);
+
+		}
+
+		cout << ret << "\n";
+
 	}
 
-	// cout << "initial: =====" << '\n';
-	// for (int y = 0; y < n; y++)
-	// {
-	//     for (int x = 0; x < n; ++x)
-	//     {
-	//         cout << board[y][x] << ' ';
-	//     }
-	//     cout << '\n';
-	// }
-	// cout << "========\n";
-	for (int i = 0; i < m; ++i)
-	{
-		// bomb reduction
-		reduceBomb();
-
-		// growth
-		growth();
-
-		cout << "after growth  year:" << i << '\n';
-		for (int y = 0; y < n; y++)
-		{
-			for (int x = 0; x < n; ++x)
-			{
-				cout << board[y][x] << ' ';
-			}
-			cout << '\n';
-		}
-		cout << "============\n";
-		// reproduce
-		vector<pii> temp;
-		reproduce(temp);
-
-		cout << "after reproduce year:" << i << '\n';
-		for (int y = 0; y < n; y++)
-		{
-			for (int x = 0; x < n; ++x)
-			{
-				cout << board[y][x] << ' ';
-			}
-			cout << '\n';
-		}
-		cout << "============\n";
-		// find best bomb position
-		vector<int> container;
-		getBestPosition(container);
-
-		// drop bomb
-		dropBomb(container[0], container[1]);
-
-		score += container[2];
-
-		cout << "Board after erase year: " << i << '\n';
-		for (int y = 0; y < n; y++)
-		{
-			for (int x = 0; x < n; ++x)
-			{
-				cout << board[y][x] << ' ';
-			}
-			cout << '\n';
-		}
-		cout << "----------------------------\n";
-
-		cout << "Bomb map\n";
-		for (int y = 0; y < n; y++)
-		{
-			for (int x = 0; x < n; ++x)
-			{
-				cout << bomb[y][x] << ' ';
-			}
-			cout << '\n';
-		}
-		cout << "============================\n";
-	}
-
-	cout << score;
-	return 0;
 }

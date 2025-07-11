@@ -112,6 +112,33 @@
     <Filter Include="Source Files\2505\19-25">
       <UniqueIdentifier>{b591f1a1-5983-4ddc-a13d-b776f1c9b87c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2505\26-01">
+      <UniqueIdentifier>{5410b4c5-1486-4deb-aa53-5a2697ca5485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506">
+      <UniqueIdentifier>{0fd385ef-ff90-48bc-b51d-4a90becfb12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506\02-08">
+      <UniqueIdentifier>{bd653a0a-3083-44cf-9335-701f61482fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506\09-15">
+      <UniqueIdentifier>{329231e9-b42d-4b35-a8d4-2b8847ff3f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506\16-22">
+      <UniqueIdentifier>{2689c845-1901-4fae-b6b2-07feee2e8339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506\23-29">
+      <UniqueIdentifier>{2e209272-76e6-4fee-857e-655a41ac83af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2506\30-06">
+      <UniqueIdentifier>{a9b29006-3b60-4429-8cd1-18cebb46d106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2507">
+      <UniqueIdentifier>{e5836dc2-3bac-4863-989b-833b72d8019a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2507\07-13">
+      <UniqueIdentifier>{0a11099a-211a-4ed3-843c-673d6e46a3b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2294_coin_2.cpp">
@@ -761,6 +788,99 @@
     </ClCompile>
     <ClCompile Include="13511_tree_and_query_2.cpp">
       <Filter>Source Files\2505\19-25</Filter>
+    </ClCompile>
+    <ClCompile Include="2150_strongly_connected_component.cpp">
+      <Filter>Source Files\2505\26-01</Filter>
+    </ClCompile>
+    <ClCompile Include="4196_domino.cpp">
+      <Filter>Source Files\2505\26-01</Filter>
+    </ClCompile>
+    <ClCompile Include="3977_football_strategy.cpp">
+      <Filter>Source Files\2505\26-01</Filter>
+    </ClCompile>
+    <ClCompile Include="4013_ATM.cpp">
+      <Filter>Source Files\2505\26-01</Filter>
+    </ClCompile>
+    <ClCompile Include="11280_2-SAT_3.cpp">
+      <Filter>Source Files\2506\02-08</Filter>
+    </ClCompile>
+    <ClCompile Include="11281_2-SAT_4.cpp">
+      <Filter>Source Files\2506\02-08</Filter>
+    </ClCompile>
+    <ClCompile Include="3648_idol.cpp">
+      <Filter>Source Files\2506\02-08</Filter>
+    </ClCompile>
+    <ClCompile Include="16367_TV_Show_Game.cpp">
+      <Filter>Source Files\2506\02-08</Filter>
+    </ClCompile>
+    <ClCompile Include="13975_merge_file_3.cpp">
+      <Filter>Source Files\2506\09-15</Filter>
+    </ClCompile>
+    <ClCompile Include="10775_gates.cpp">
+      <Filter>Source Files\2506\09-15</Filter>
+    </ClCompile>
+    <ClCompile Include="14464_cows_crossing_crossroad.cpp">
+      <Filter>Source Files\2506\09-15</Filter>
+    </ClCompile>
+    <ClCompile Include="14908_shoe_repairer.cpp">
+      <Filter>Source Files\2506\09-15</Filter>
+    </ClCompile>
+    <ClCompile Include="16496_make_big_number.cpp">
+      <Filter>Source Files\2506\09-15</Filter>
+    </ClCompile>
+    <ClCompile Include="12776_swap_space.cpp">
+      <Filter>Source Files\2506\16-22</Filter>
+    </ClCompile>
+    <ClCompile Include="28277_gather_to_survive.cpp">
+      <Filter>Source Files\2506\16-22</Filter>
+    </ClCompile>
+    <ClCompile Include="13306_tree.cpp">
+      <Filter>Source Files\2506\16-22</Filter>
+    </ClCompile>
+    <ClCompile Include="17469_tree_color_query.cpp">
+      <Filter>Source Files\2506\16-22</Filter>
+    </ClCompile>
+    <ClCompile Include="1765_chicken_fight_team.cpp">
+      <Filter>Source Files\2506\16-22</Filter>
+    </ClCompile>
+    <ClCompile Include="3830_professor_never_wait.cpp">
+      <Filter>Source Files\2506\23-29</Filter>
+    </ClCompile>
+    <ClCompile Include="35_segment_tree_1.cpp">
+      <Filter>Source Files\2506\23-29</Filter>
+    </ClCompile>
+    <ClCompile Include="11505_partial_product.cpp">
+      <Filter>Source Files\2506\23-29</Filter>
+    </ClCompile>
+    <ClCompile Include="2357_partial_min_max.cpp">
+      <Filter>Source Files\2506\30-06</Filter>
+    </ClCompile>
+    <ClCompile Include="1517_bubble_sort.cpp">
+      <Filter>Source Files\2506\30-06</Filter>
+    </ClCompile>
+    <ClCompile Include="9345_DVDs.cpp">
+      <Filter>Source Files\2506\30-06</Filter>
+    </ClCompile>
+    <ClCompile Include="16975_sequence_and_query.cpp">
+      <Filter>Source Files\2506\30-06</Filter>
+    </ClCompile>
+    <ClCompile Include="12899_data_structure.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="1168_Josephus_problem_2.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="2170_draw_lines.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="2836_water_taxi.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="5419_northwester.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
+    </ClCompile>
+    <ClCompile Include="17131_fox_on_info_island.cpp">
+      <Filter>Source Files\2507\07-13</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
